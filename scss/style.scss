@@ -59,7 +59,7 @@ header {
   min-width: 100%;
 }
 .header__catalog__list {
-  //display: none;
+  display: none;
   min-width: 100%;
   position: absolute;
   top: 90%;
@@ -89,7 +89,7 @@ header {
       }
       &:hover, &:active {
         .arrow {
-          transition: all 600ms ease 0ms;
+          transition: all 400ms ease 0ms;
           transform: rotate(90deg);
         }
       }
@@ -291,7 +291,6 @@ header {
 }
 .big__slider, .slick-slider {
   max-height: fit-content;
-  border: 1px solid #000;
   min-width: 0;
   overflow: hidden;
   z-index: 2;
@@ -329,7 +328,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(0,-250%);
+  transform: translate(0,-180%);
 }
 .big__slider .slick-dots li {
   height: 30px;

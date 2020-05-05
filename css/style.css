@@ -155,6 +155,7 @@ header {
 }
 
 .header__catalog__list {
+  display: none;
   min-width: 100%;
   position: absolute;
   top: 90%;
@@ -198,8 +199,8 @@ header {
 }
 
 .header__catalog__list li a:hover .arrow, .header__catalog__list li a:active .arrow {
-  -webkit-transition: all 600ms ease 0ms;
-  transition: all 600ms ease 0ms;
+  -webkit-transition: all 400ms ease 0ms;
+  transition: all 400ms ease 0ms;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -464,7 +465,6 @@ header {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  border: 1px solid #000;
   min-width: 0;
   overflow: hidden;
   z-index: 2;
@@ -517,8 +517,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translate(0, -250%);
-          transform: translate(0, -250%);
+  -webkit-transform: translate(0, -180%);
+          transform: translate(0, -180%);
 }
 
 .big__slider .slick-dots li {
