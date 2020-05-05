@@ -15,8 +15,8 @@ $(document).ready(function(){
         draggable: true, //перетаскивание мышкой на ПК
         swipe: true, //перетаскивание тачскрином
         centerMode: false, //активный слайд по центру. Показывает 3 слайда. Получает класс .slick-center
-        variableWidth: true, // сбрасывает width. Хорошо работает с centerMode
-        appendArrows: $('.main__slider__container'),
+        variableWidth: false, // сбрасывает width. Хорошо работает с centerMode, плохо со slidesToShow
+        //appendArrows: $('.main__slider__container'),
     });
 
 })
