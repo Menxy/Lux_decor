@@ -2,8 +2,8 @@ $(document).ready(function(){
     $('.big__slider').slick({
         arrows: true,
         dots: true,//положение меняется стилизацией контейнера .slick-dots
-        adaptiveHeight: false, // если true для slick-track align-items: flex-start;
-        slidesToShow: 1, //количество отображаемых слайдов
+        adaptiveHeight: true, // если true для slick-track align-items: flex-start;
+        //slidesToShow: 1, //количество отображаемых слайдов
         // slidesToScroll: 10, //количество слайдов перемотки
         // speed: 1000, // 300 умолчание в ms
         // easing: "ease", //как в анимации css
