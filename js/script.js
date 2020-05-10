@@ -22,8 +22,12 @@ $(document).ready(function(){
     });
     $('.hits__slider').slick({
         arrows: true,
-        dots: true,//положение меняется стилизацией контейнера .slick-dots
+        dots: false,//положение меняется стилизацией контейнера .slick-dots
         slidesToShow: 4, //количество отображаемых слайдов
-
+        responsive: [
+            {breakpoint: 960, settings: {slidesToShow: 3}},
+            {breakpoint: 768, settings: {slidesToShow: 2}},
+            {breakpoint: 500, settings: {slidesToShow: 1}},
+        ]
     });
 })

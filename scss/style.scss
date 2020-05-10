@@ -123,9 +123,9 @@ header {
         color: #000;
         background-color: #fff;
         font-size: 0.90em;
-        padding: 0 14px 0 19px;
+        padding: 0 16px 0 19px;
         .arrow {
-          background: url(../src/slider/slider_2_rightarrow.png)0 0/90% auto no-repeat;
+          background: url(../src/slider/catalog__arrow.png)0 0/80% auto no-repeat;
         }
       }
       &:hover, &:active {
@@ -157,8 +157,6 @@ header {
   margin-top: 5px;
   background: url(../src/slider/menu_arrow_right.png)0 0/90% auto no-repeat;
 }
-// .header__li__arrow {
-// }
 
 .header__catalog__sub-list {
   display: none;
@@ -180,7 +178,7 @@ header {
       a {
         padding: 19.5px 15px;
         color: #000;
-        font-size: 1.05em;
+        font-size: 1em;
         padding-left: 52px;
         background: url(../src/next.png)78% center no-repeat;
         &:hover {
@@ -206,7 +204,7 @@ header {
 }
 .header__contacts__classic {
   display: flex;
-  @media (max-width: 730px) {
+  @media (max-width: 710px) {
     justify-content: space-between;
   }
 }
@@ -442,6 +440,9 @@ header {
 
 .big__slider-img {
   opacity: 1;
+  img {
+    width: 100%;
+  }
 }
 .big__slider .slick-dots{
   display: flex;
@@ -473,11 +474,17 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   padding: 10px 0 30px 0;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 10px 0 30px 30px;
+  }
   div {
     flex: 0 0 33.33%;
+    white-space: nowrap;
+    padding-right: 30px;
   }
 }
-.breaker {
+.hits__breaker {
   display: block;
   font-size: 20px;
   line-height: 20px;
@@ -485,22 +492,25 @@ header {
   text-transform: uppercase;
   color: #7c7373;
   text-align: center;
-  padding-right: 30px;
 }
 .hits__goto {
-  padding-right: 30px;
   display: flex;
   justify-content: center;
   a {
     font-size: 15px;
     line-height: 22px;
     font-weight: 500;
-    color: #7c7373;
-    text-decoration: none;
+    color: #ff9c00;
+    text-decoration: underline;
     padding-right: 5px;
+    cursor: pointer;
     &:hover {
-      text-decoration: underline;
+      color: #7c7373;
     }  
+    @media (max-width: 500px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 .hits__slider__container {
