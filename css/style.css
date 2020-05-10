@@ -858,7 +858,7 @@ header {
   position: relative;
   z-index: 1;
   max-width: 1083px;
-  padding: 0 10px;
+  padding: 0 10px 20px 10px;
   margin: 0 auto;
 }
 
@@ -907,6 +907,8 @@ header {
 }
 
 .hits__slider-element {
+  position: relative;
+  overflow: hidden;
   background-color: #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25%;
@@ -924,6 +926,14 @@ header {
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.hits__slider-element:hover {
+  border: 2px solid #fd9b00;
+  -webkit-box-shadow: 0px 0px 10px 10px #ededed;
+          box-shadow: 0px 0px 10px 10px #ededed;
+  z-index: 100;
 }
 
 .hits__element-img img {
@@ -986,8 +996,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  background: url(../src/buy_bg.png) right bottom/cover no-repeat;
-  border: 1px solid #ff9c00;
+  background: url(../src/buy_bg.png) right top/cover no-repeat;
+  border-bottom: 1px solid #ff9c00;
   min-width: 100%;
 }
 
@@ -1000,6 +1010,10 @@ header {
   font-weight: 400;
   color: #010101;
   padding-left: 13px;
+}
+
+.hits__element-buy:hover {
+  background: url(../src/buy_bg_active.png) right top/cover no-repeat;
 }
 
 .hits__element-compare {
@@ -1021,6 +1035,44 @@ header {
   font-weight: 400;
   color: #000000;
   padding-left: 10px;
+}
+
+.hits__element__triangle {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-transform: translate(-50%, -75%) rotate(-45deg);
+          transform: translate(-50%, -75%) rotate(-45deg);
+}
+
+.hits__element__triangle div {
+  margin: 75% 30% 0 0;
+  text-align: center;
+}
+
+.triangle__hit {
+  background-color: #fc9a00;
+}
+
+.triangle__sale {
+  background-color: #ff411c;
+}
+
+.triangle__sale div {
+  margin: 82% 30% 0 3%;
+}
+
+.triangle__new {
+  background-color: #39c05f;
+}
+
+.triangle__new div {
+  margin: 82% 30% 0 3%;
 }
 
 /*.top {
