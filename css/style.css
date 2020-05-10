@@ -1075,440 +1075,72 @@ header {
   margin: 82% 30% 0 3%;
 }
 
-/*.top {
-  position: relative;
-  z-index: 5;                   //  <-- 5!
-  min-height: 567px;
-  background: url(../src/bg_top.jpg) 0 0/101% auto no-repeat fixed;
-  @media (max-width: 1150px) {
-    background-position: center 0;
-    background-size: cover;
-  }
-  @media (max-width: 630px) {
-    min-height: fit-content;
-  }
+.slider_3 {
+  padding-bottom: 40px;
 }
-.container {
-  max-width: 840px;
+
+.signup__container {
+  max-width: 1083px;
+  padding: 0 10px;
   margin: 0 auto;
-  height: 85%;
-  @media (max-width: 1150px) {
-    max-width: 85%;
-    height: 95%;
-  }
 }
-.flex {
+
+.signup__form {
+  background: url(../src/signup_bg.jpg) 0 0 no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  padding: 6.5% 0 0 0;
-  height: 100%;
-  @media (max-width: 1150px) {
-    padding: 3.5% 0 0 0;
-  }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 9.5%;
 }
-.flex__left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: 1px solid transparent;
-  flex: 1 1 49%;
-}
-.top__logo {
-  font-family: 'SFCompact';
-  font-size: 29.2px;
-  line-height: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-left: 0.2%;
-}
-.top__promo {
-  margin-top: 6.8%;
-  font-family: 'MyriadPro';
-  font-size: 29px;
-  line-height: 29px;
-  font-weight: 400;
-  color: #ffffff;
-  padding-left: 73px;
-  margin: 22% 0 5.6% 0;
-  white-space: nowrap;
-  background: url(../src/icon_search.png)0 center/auto 90% no-repeat;
-  @media (max-width: 768px) {
-    padding-left: 53px;
-    background: url(../src/icon_search.png)0 center/auto 60% no-repeat;
-  }
-  @media (max-width: 430px) {
-    padding-left: 0;
-    background: none;
-  }
-  span {
-    font-weight: 600;
-    font-size: 30px;
-    @media (min-width: 430px) {
-      white-space: nowrap;
-    }
-  }
-}
-.top__text {
-  font-family: 'Helvetica';
-  font-size: 14.6px;
-  line-height: 22px;
-  color: #ffffff;
-}
-.top__appstore {
-  width: 197px;
-  height: 44px;
-  background: url(../src/applebgbtn.png) 0 0/100% auto no-repeat;
-  margin: 3% 0 7% 0;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 197px;
-    height: 44px;
-    background: url(../src/apple_logo.png) 33px 33%/13.5% auto no-repeat;
-    p {
-      font-family: 'LucidaGrande';
-      font-size: 9.7px;
-      line-height: 10px;
-      font-weight: 300;
-      letter-spacing: -0.035em;
-      color: #ffffff;
-      padding-left: 75.5px;
-    }
-    p:last-child {
-      font-size: 16.9px;
-      line-height: 15px;
-      letter-spacing: -0.035em;
-    }
-  }
-}
-.top__sign {
-  font-family: MyriadPro;
-  font-size: 14.6px;
-  line-height: 24px;
-  font-weight: 200;
-  color: #ffffff;
-  padding: 4% 0 1.7% 0;
-}
-.top__signup {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  //
-  input::-webkit-input-placeholder {color:#fff;}
-  input::-moz-placeholder     {color:#fff;} 
-  input:-moz-placeholder      {color:#fff;} 
-  input:-ms-input-placeholder {color:#fff;}
-  //text-overflow:ellipsis; 
-  @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-  }
-  @media (max-width: 630px) {
-    padding-bottom: 3%;
-  }
-}
-.top__input {
-  width: 269px;
-  height: 43px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  padding-left: 10px;
-  margin-bottom: 2%;;
-}
-.top__notify {
-  display: inline-block;
-  width: 123px;
-  height: 43px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  font-family: 'MyriadPro';
+
+.signup__form p {
   font-size: 15px;
-  line-height: 24px;
+  line-height: 15px;
   font-weight: 500;
-  color: #3cd072;
+  text-transform: uppercase;
+  color: #fefefe;
+  padding-right: 50px;
 }
-.flex__right {
-  border: 1px solid transparent;
-  flex: 1 1 50%;
-  position: relative;
-  @media (max-width: 630px) {
-    display: none;
-  }
+
+.signup__mail {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  min-height: 32px;
+  opacity: 0.6;
+  background-color: #66d3cd;
+  background-image: url(../src//signup_mail.png);
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  border: 1px solid #ffffff;
+  padding: 0 0 0 9px;
+  color: #fefefe;
+  cursor: pointer;
+  font-size: 14px;
 }
-.iphone_b {
-  position: absolute;
-  width: 58.5%;
-  left: 83px;
-  top: 19px;
-  z-index: 6;
-  transition: all 800ms ease 0s;
-  &:hover {
-    transform: translate(-10px,-10px) scale(1.05);
-    z-index: 8;
-  }
-  @media (max-width: 1150px) {
-    left: 30px;
-    top: 5px;
-  }
-  @media (max-width: 1024px) {
-    width: max-content;
-    max-width: 65%;
-    left: auto;
-    right: -20px;
-    z-index: 9;
-  }
-  @media (max-width: 768px) {
-    max-width: 75%;
-  }
+
+.signup__mail::-webkit-input-placeholder {
+  color: #fefefe;
+  opacity: 1;
 }
-.iphone_w {
-  position: absolute;
-  width: 59.5%;
-  left: 195.5px;
-  top: 58px;
-  z-index: 7;
-  transition: all 800ms ease 0s;
-  &:hover {
-    transform: scale(1.05);
-    z-index: 8;
-  }
-  @media (max-width: 1024px) {
-    width: max-content;
-    max-width: 65%;
-    left: 20px;
-    top: auto;
-    bottom: -60px;
-  }
-  @media (max-width: 768px) {
-    max-width: 75%;
-  }
+
+.signup__mail::-moz-placeholder {
+  color: #fefefe;
+  opacity: 1;
 }
-.diag {
-  position: relative;
-  z-index: 4;                   //  <-- 5!
-  min-height: 567px;
-  background-color: #f0f0f0;
-  @media (max-width: 430px) {
-    min-height: fit-content;
-  }
+
+.signup__mail:-moz-placeholder {
+  color: #fefefe;
+  opacity: 1;
 }
-.diag__container {
-  max-width: 870px;
-  margin: 0 auto;
-  height: 100%;
-  padding: 1.1% 0 0 0;
+
+.signup__mail:-ms-input-placeholder {
+  color: #fefefe;
+  opacity: 1;
 }
-.diag__flex {
-  border: 1px solid transparent;
-  margin: 13% 0 10% 0;
-  display: flex;
-  justify-content: space-between;
-}
-.diag__left {
-  position: relative;
-  flex: 1 1 50%;
-  @media (max-width: 430px) {
-    display: none;
-  }
-}
-.diag__img {
-  position: absolute;
-  width: 372px;
-  left: 79px;
-  top: -161px;
-  z-index: 4;                   //  <-- 4!
-  transition: all 500ms ease 0s;
-  @media (max-width: 768px) {
-    top: auto;
-    bottom: 10%;
-    left: auto;
-    right: 5%;
-  }
-  @media (max-width: 430px) {
-    display: none;
-  }
-  &:last-child {
-    left: -69px;
-    top: 29px;
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-  &:hover {
-    transform: scale(0.85);
-    z-index: 50;
-  }
-}
-.diag__right {
-  flex: 1 1 29%;
-  margin-top: 2px;
-  @media (max-width: 430px) {
-    width: 80%;
-    padding-left: 10%;
-  }
-}
-.diag__item {
-  @media (max-width: 1024px) {
-    padding-right: 10%;
-  }
-}
-.diag__item__head {
-  font-family: 'MyriadPro';
-  white-space: nowrap;
-  font-size: 22.5px;
-  line-height: 32px;
-  font-weight: 500;
-  height: 56px;
-  color: #3cd072;
-  padding: 12px 5px 12px 73px;
-  background: url(../src/icon_hold.png)0 center/auto 90% no-repeat;
-}
-.diag__item__head__2 {
-  background: url(../src/icon_where.png)0 center/auto 90% no-repeat;
-}
-.diag__item__text {
-  font-family: 'Helvetica';
-  font-size: 14.8px;
-  line-height: 22px;
-  font-weight: 400;
-  padding: 7px 0 39px 0;
-}
-.easy {
-  position: relative;
-  z-index: 6;                   //  <-- 6!
-  min-height: 744px;
-  background: url(../src/easy_bg.jpg)center 0/cover no-repeat;
-  @media (max-width: 1024px) {
-    min-height: fit-content;
-    background: none;
-    background-color: #fff;
-    padding: 4% 0;
-  }
-  @media (min-width: 1450px) {
-    background: url(../src/easy_bg.jpg)center center/cover no-repeat;
-  }
-}
-.easy__container {
-  max-width: 875px;
-  margin: 0 auto;
-  height: 100%;
-  @media (max-width: 1024px) {
-    width: 95%;
-  }
-}
-.easy__top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 66px;
-    margin: 43px 0 20px 13px;
-    @media (max-width: 1024px) {
-      margin: 2% 0 0 0;
-    }
-  }
-  p {
-    font-family: 'MyriadPro';
-    font-size: 22.5px;
-    line-height: 32px;
-    font-weight: 600;
-    margin: 2px 0 0 10px;
-    text-align: center;
-  }
-  p:last-child {
-    font-size: 33.5px;
-    line-height: 32px;
-    font-weight: 600;
-    color: #3cd072;
-    margin-top: 8px;
-  }
-  @media (max-width: 1024px) {
-    
-  }
-}
-.easy__bottom {
-  display: flex;
-  margin: 38px 0 0 0;
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    margin: 10px 0 0 0;
-  }
-}
-.easy__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 30%;
-  @media (max-width: 1024px) {
-    flex-direction: row;
-    padding: 0 0 2% 0;
-  }
-  img {
-    width: 52px;
-    margin-left: 11px;
-  }
-  p {
-    color: #000;
-    font-family: 'MyriadPro';
-    font-size: 22.5px;
-    line-height: 30px;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px 8px 0 20px;
-    @media (max-width: 1024px) {
-      padding: 0 0 0 3%;
-      text-align: left;
-    }
-    @media (max-width: 530px) {
-      font-size: 20px;
-      line-height: 22px;
-      opacity: 0.5;
-    }
-  }
-}
-.get {
-  min-height: 392px;
-  background-color: #000;
-}
-.get__top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  p {
-    color: #fff;
-    font-family: 'MyriadPro';
-    font-size: 23px;
-    line-height: 32px;
-    font-weight: 400;
-    margin-left: 14px;
-    text-align: center;
-    &:first-child {
-      margin-top: 64px;
-    }
-  }
-  .get__green {
-    font-size: 34px;
-    font-weight: 400;
-    color: #3cd072;
-    line-height: 48px;
-    margin-bottom: 40px;
-  }
-}
-                      // Slider
-.get__slider {
-  position: relative;
-  min-width: 0; // (Если он или родитель flex
-  padding: 0 40px 0 40px;
-  overflow: hidden;
-}
-.slider-img {
-  text-align: center; // Для выравнивания слайда по вертикали
-  opacity: 0.5;
-  margin: 0 5px;
-  }
-//   /* Слайдер */
-/* Слайд */
