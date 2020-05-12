@@ -59,15 +59,15 @@ let sym = Symbol();*/
 // car[carProp] = 'yellow';
 // console.log(car.color);
 // console.log(car.audio.spea);
-let carYellow = {
-        color: 'yellow',
-        mark: 'Ford'
-    };
-console.log(carYellow.color);
-let carRed = {
-    color: 'red',
-    mark: 'Ford'
-};
-console.log(carRed.color);
-carYellow.color = carRed.color;
-console.log(carYellow.color);
+// let carYellow = {
+//         color: 'yellow',
+//         mark: 'Ford'
+//     };
+// console.log(carYellow.color);
+// let carRed = {
+//     color: 'red',
+//     mark: 'Ford'
+// };
+// console.log(carRed.color);
+// carYellow.color = carRed.color;
+// console.log(carYellow.color);

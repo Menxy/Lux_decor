@@ -468,7 +468,7 @@ header {
 .big__slider .slick-dots li.slick-active{
   border: 1px solid #fff;
 }
-.hits {
+.breaker {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -484,7 +484,7 @@ header {
     padding-right: 30px;
   }
 }
-.hits__breaker {
+.breaker__name {
   display: block;
   font-size: 20px;
   line-height: 20px;
@@ -493,7 +493,7 @@ header {
   color: #7c7373;
   text-align: center;
 }
-.hits__goto {
+.breaker__goto {
   display: flex;
   justify-content: center;
   a {
@@ -683,18 +683,39 @@ header {
   margin: 0 auto;
 }
 .signup__form {
-  background: url(../src/signup_bg.jpg)0 0 no-repeat;
+  background: url(../src/signup_bg.jpg)0 0/cover no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 9.5%;
   p{
+    white-space: nowrap;
     font-size: 15px;
     line-height: 15px;
     font-weight: 500;
     text-transform: uppercase;
     color: #fefefe;
     padding-right: 50px;
+  }
+  @media (max-width: 960px) {
+    padding: 20px 3%;
+    p {
+      font-size: 13px;
+      line-height: 14px;
+      padding-right: 20px;
+    } 
+  }
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: stretch;
+    p {
+      padding-bottom: 10px;
+    }
+  }
+  @media (max-width: 440px) {
+    p {
+      white-space: normal;
+    }
   }
 }
 .signup__mail {
@@ -714,4 +735,65 @@ header {
   &::-moz-placeholder          {color:#fefefe;opacity: 1;}
   &:-moz-placeholder           {color:#fefefe;opacity: 1;}
   &:-ms-input-placeholder      {color:#fefefe;opacity: 1;}
+}
+.breaker__guarantee {
+  justify-content: center;
+  margin-top: 25px;
+}
+.guarantee__container {
+  max-width: 1083px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.guarantee__flex {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+.guarantee__item {
+  flex: 1 1 25%;
+  padding: 1.5% 2% 1.5% 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 59px 0px rgba(0,0,0,0.1);
+  @media (max-width: 550px) {
+    flex-direction: row;
+    flex: 0 1 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 10% 1.5% 10%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    margin: 5px 15px;
+  }
+}
+.guarantee__logo {
+    flex: 1 1 30%;
+  }
+}
+.guarantee__text {
+  padding-top: 4%;
+  line-height: 1.1em;
+  @media (max-width: 960px) {
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media (max-width: 550px) {
+    padding-top: 0;
+    font-size: 14px;
+    flex: 1 1 65%;
+    text-align: start;
+  }
+}
+.breaker__useful {
+  justify-content: center;
+  margin-top: 25px;
 }
