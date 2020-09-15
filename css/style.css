@@ -282,8 +282,10 @@ header {
 
 .header__catalog__list li a:hover .arrow, .header__catalog__list li a:active .arrow {
   -webkit-transition: all 400ms ease 0ms;
+  -o-transition: all 400ms ease 0ms;
   transition: all 400ms ease 0ms;
   -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
@@ -299,6 +301,7 @@ header {
 
 .header__li__1:hover {
   -webkit-transform: scaleX(1.05);
+      -ms-transform: scaleX(1.05);
           transform: scaleX(1.05);
   font-size: 0.90em;
 }
@@ -727,6 +730,7 @@ header {
 .big__slider .slick-arrow.slick-prev {
   background: url(../src/slider/arrow_slider_left.png) center no-repeat;
   -webkit-transform: translate(-40%, 0);
+      -ms-transform: translate(-40%, 0);
           transform: translate(-40%, 0);
 }
 
@@ -735,6 +739,7 @@ header {
   right: 10px;
   background: url(../src/slider/arrow_slider_right.png) center/cover no-repeat;
   -webkit-transform: translate(40%, 0);
+      -ms-transform: translate(40%, 0);
           transform: translate(40%, 0);
 }
 
@@ -757,6 +762,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transform: translate(0, -180%);
+      -ms-transform: translate(0, -180%);
           transform: translate(0, -180%);
 }
 
@@ -775,6 +781,7 @@ header {
   width: 10px;
   color: #fff;
   -webkit-transform: translate(90%, 10%);
+      -ms-transform: translate(90%, 10%);
           transform: translate(90%, 10%);
 }
 
@@ -895,6 +902,7 @@ header {
 .hits__slider .slick-arrow.slick-prev {
   background: url(../src/slider/slider_2_leftarrow.png) center no-repeat;
   -webkit-transform: translate(-45%, 0);
+      -ms-transform: translate(-45%, 0);
           transform: translate(-45%, 0);
 }
 
@@ -903,6 +911,7 @@ header {
   right: 10px;
   background: url(../src/slider/slider_2_rightarrow.png) center/cover no-repeat;
   -webkit-transform: translate(45%, 0);
+      -ms-transform: translate(45%, 0);
           transform: translate(45%, 0);
 }
 
@@ -1047,6 +1056,7 @@ header {
   font-weight: 400;
   color: #ffffff;
   -webkit-transform: translate(-50%, -75%) rotate(-45deg);
+      -ms-transform: translate(-50%, -75%) rotate(-45deg);
           transform: translate(-50%, -75%) rotate(-45deg);
 }
 

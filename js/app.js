@@ -9,16 +9,16 @@
 myAge = 36; 
 
 // Литерал - константа (число/текст)
-let qwe;
-let asd;
+// let qwe;
+// let asd;
 
-qwe = 5;
-asd = 7;
+// qwe = 5;
+// asd = 7;
 
-let a, b, c;
-a = b = c = 15;
-let qwe = 5;
-let asd = 7;   или так
+// let a, b, c;
+// a = b = c = 15;
+// let qwe = 5;
+// let asd = 7;   или так
 
 console.log(qwe + asd);
 console.log(a + asd, b);
